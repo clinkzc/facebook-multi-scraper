@@ -13,27 +13,21 @@ import pandas as pd
 from scipy.stats import norm
 
 
-#  At the cost of performance, set these to true for more precise data: reaction type breakdown and public shares across Facebook
 #  Overall reactions per post are already pulled
-GET_SPECIFIC_REACTIONS_BOOL = False
-GET_PUBLIC_SHARES_BOOL = False
+GET_SPECIFIC_REACTIONS_BOOL = True
+GET_PUBLIC_SHARES_BOOL = True
 
-# Page IDs to be scraped, defined by page's Facebook handle.  
+# Page IDs to be scraped, Small batches at a go.  
 PAGE_IDS_TO_SCRAPE = [
-        'nytimes',
-        'vicenews',
-        'bbcnews',
-        'TheSkimm',
-        'cnn',
-        'NBCNews',
-        'financialtimes',
-        'washingtonpost',
-        'theguardian',
-        'timesandsundaytimes',
-        'msnbc',
-        'CBSNews',
-        'TheIndependentOnline',
-        'ABCNews'
+        'Apple',
+        'Google',
+        'Amazon',
+        'Cocacola',
+        'Samsung',
+        'Toyota',
+        'MercedesBenz',
+        'Facebook',
+        'Mcdonalds'
         ]
 
 # Additional personal metrics are pulled for owned pages in keys below who also exist in PAGE_IDS_TO_SCRAPE
